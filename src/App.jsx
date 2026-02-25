@@ -1,9 +1,9 @@
-import React from 'react'
-import { Toaster } from "@/components/ui/toaster"
-import { QueryClientProvider } from '@tanstack/react-query'
-import { queryClientInstance } from '@/lib/query-client'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import Home from '@/pages/Home'
+import React from 'react';
+import { Toaster } from "@/components/ui/toaster";
+import { QueryClientProvider } from '@tanstack/react-query';
+import { queryClientInstance } from '@/lib/query-client';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from '@/pages/Home';
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
       </Router>
       <Toaster />
     </QueryClientProvider>
-  )
+  );
 }
 
-export default App
+export default App;
