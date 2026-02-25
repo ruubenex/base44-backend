@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { ArrowRight, Flame, Zap, Heart } from 'lucide-react';
+import { ArrowRight, Flame, Zap, Heart, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/i18n/LanguageContext';
 
@@ -62,10 +62,15 @@ export default function FooterCTA({ isDarkMode }) {
             <span className={`font-semibold ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>CamCal</span>
           </div>
           <p className="text-sm mb-4">{ft.tagline}</p>
-          <div className="flex items-center justify-center gap-4">
+          <div className="flex items-center justify-center gap-4 flex-wrap">
             <a href="https://camcal.pro/" target="_blank" rel="noopener noreferrer" className={`text-sm hover:text-orange-500 transition-colors ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>{ft.accessApp}</a>
             <span>•</span>
             <a href="#features" className={`text-sm hover:text-orange-500 transition-colors ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>{ft.featuresLink}</a>
+            <span>•</span>
+            <a href="https://www.instagram.com/camcal.ia/" target="_blank" rel="noopener noreferrer" className={`inline-flex items-center gap-1 text-sm hover:text-orange-500 transition-colors ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>
+              <Instagram className="w-4 h-4" />
+              {ft.instagram}
+            </a>
             <span>•</span>
             <a href="#" className={`text-sm hover:text-orange-500 transition-colors ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>{ft.contact}</a>
           </div>
