@@ -11,6 +11,7 @@ import FooterCTA from '@/components/landing/FooterCTA';
 import FloatingElements from '@/components/landing/FloatingElements';
 import ThemeTransition from '@/components/landing/ThemeTransition';
 import LanguageSwitcher from '@/components/landing/LanguageSwitcher';
+import SEOHead from '@/components/seo/SEOHead';
 
 export default function Home() {
   const containerRef = useRef(null);
@@ -30,6 +31,7 @@ export default function Home() {
 
   return (
     <div ref={containerRef} className="relative overflow-hidden">
+      <SEOHead />
       <LanguageSwitcher />
       <FloatingElements scrollProgress={scrollYProgress} isDarkMode={isDarkMode} />
       <ThemeTransition scrollProgress={scrollYProgress} />
