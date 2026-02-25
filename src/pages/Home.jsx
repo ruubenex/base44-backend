@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { motion, useScroll, useTransform, useSpring, AnimatePresence } from 'framer-motion';
-import { Camera, Zap, Target, Droplets, Trophy, Users, ChevronDown, Flame, Apple, Dumbbell, ChefHat, Sparkles, Check, Star, ArrowRight, Plus, Minus } from 'lucide-react';
+import { useScroll } from 'framer-motion';
 
 import HeroSection from '@/components/landing/HeroSection';
 import FeaturesSection from '@/components/landing/FeaturesSection';
@@ -11,6 +10,7 @@ import FAQSection from '@/components/landing/FAQSection';
 import FooterCTA from '@/components/landing/FooterCTA';
 import FloatingElements from '@/components/landing/FloatingElements';
 import ThemeTransition from '@/components/landing/ThemeTransition';
+import LanguageSwitcher from '@/components/landing/LanguageSwitcher';
 
 export default function Home() {
   const containerRef = useRef(null);
@@ -30,13 +30,10 @@ export default function Home() {
 
   return (
     <div ref={containerRef} className="relative overflow-hidden">
-      {/* Floating Elements that follow scroll */}
+      <LanguageSwitcher />
       <FloatingElements scrollProgress={scrollYProgress} isDarkMode={isDarkMode} />
-      
-      {/* Theme Transition Overlay */}
       <ThemeTransition scrollProgress={scrollYProgress} />
 
-      {/* Light Theme Sections */}
       <div className={`transition-colors duration-1000 ${isDarkMode ? 'bg-[#0A0A0A]' : 'bg-[#FAFAFA]'}`}>
         <HeroSection />
         <FeaturesSection isDarkMode={isDarkMode} />
