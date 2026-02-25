@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useLanguage } from './LanguageContext';
+import { useLanguage } from '@/i18n/LanguageContext';
 
 const DOMAIN = 'https://camcal.site';
 
