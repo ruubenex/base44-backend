@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://camcal.site/sitemap.xml
