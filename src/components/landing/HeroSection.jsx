@@ -1,4 +1,5 @@
 import React from 'react';
+import logoSombra from '@/assets/logocomsombra.png';
 import { motion } from 'framer-motion';
 import { Camera, Sparkles, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -42,7 +43,7 @@ export default function HeroSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-32">
         <div className="text-center">
           <motion.div initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, ease: "easeOut" }} className="mb-8">
-            <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_69838e5237519a0f64a3cf05/c7a7b0d56_logo250-invisible.png" alt="CamCal Logo" className="h-24 md:h-32 mx-auto drop-shadow-2xl" />
+            <img src={logoSombra} alt="CamCal Logo" className="h-24 md:h-32 mx-auto drop-shadow-2xl" />
           </motion.div>
 
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2, duration: 0.6 }} className="inline-flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-xl border border-orange-200 rounded-full shadow-lg shadow-orange-100 mb-8">
