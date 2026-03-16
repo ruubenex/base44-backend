@@ -4,6 +4,7 @@ import { useScroll } from 'framer-motion';
 import HeroSection from '@/components/landing/HeroSection';
 import FeaturesSection from '@/components/landing/FeaturesSection';
 import AISection from '@/components/landing/AISection';
+import CommunitySection from '@/components/landing/CommunitySection';
 import AppShowcase from '@/components/landing/AppShowcase';
 import TestimonialsSection from '@/components/landing/TestimonialsSection';
 import FAQSection from '@/components/landing/FAQSection';
@@ -40,6 +41,7 @@ export default function Home() {
         <HeroSection />
         <FeaturesSection isDarkMode={isDarkMode} />
         <AISection isDarkMode={isDarkMode} />
+        <CommunitySection isDarkMode={isDarkMode} />
         <AppShowcase isDarkMode={isDarkMode} />
         <TestimonialsSection isDarkMode={isDarkMode} />
         <FAQSection isDarkMode={isDarkMode} />
