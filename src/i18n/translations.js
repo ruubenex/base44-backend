@@ -25,7 +25,7 @@ export const translations = {
       items: [
         { title: "Escaneie sua Refeição", description: "Tire uma foto do seu prato e nossa IA identifica cada alimento instantaneamente." },
         { title: "85% de Precisão", description: "A IA mais precisa do mercado. Resultados confiáveis para o seu controle nutricional." },
-        { title: "Metas Personalizadas", description: "Defina seus objetivos e acompanhe seu progresso diário com metas de calorias e macros." },
+        { title: "Restrições & Dietas", description: "Configure sua dieta e a IA adapta tudo automaticamente para você." },
         { title: "Controle de Hidratação", description: "Acompanhe sua ingestão de água diária e receba lembretes para se manter hidratado." },
         { title: "Desafios & Sequências", description: "Complete desafios diários, mantenha sua sequência e ganhe premiações exclusivas." },
         { title: "Ranking com Amigos", description: "Compete com seus amigos, veja quem está no topo e mantenha a motivação em alta." },
@@ -36,6 +36,12 @@ export const translations = {
         { value: "1M+", label: "Refeições Escaneadas" },
         { value: "4.9", label: "Nota na App Store" },
       ],
+      progressLabels: { protein: "Proteína", carbs: "Carboidratos", fats: "Gorduras" },
+      dietTags: { vegan: "Vegano", keto: "Keto", glutenFree: "Sem Glúten", lactoseFree: "Sem Lactose", allergy: "Alergia", carnivore: "Carnívoro" },
+      goalLabel: "da meta",
+      consumed: "consumidos",
+      challenges: { hydration: "Hidratação", fullDiary: "Diário completo", proteinGoal: "Meta proteína", exercise: "Exercício" },
+      exercises: { running: "Corrida 30min", weights: "Musculação", cycling: "Ciclismo" },
     },
     ai: {
       badge: "Inteligência Artificial Avançada",
