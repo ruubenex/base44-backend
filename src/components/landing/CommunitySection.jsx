@@ -201,9 +201,7 @@ export default function CommunitySection({ isDarkMode }) {
   return (
     <section
       ref={sectionRef}
-      className={`py-24 md:py-32 relative overflow-hidden transition-colors duration-1000 ${
-        isDarkMode ? 'bg-[#0A0A0A]' : 'bg-[#0A0A0A]'
-      }`}
+      className={`py-16 md:py-32 relative overflow-hidden transition-colors duration-1000 bg-[#0A0A0A]`}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
@@ -232,7 +230,7 @@ export default function CommunitySection({ isDarkMode }) {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="flex items-center justify-center gap-2 mb-12"
+          className="flex flex-wrap items-center justify-center gap-2 mb-8 md:mb-12"
         >
           {c.tabs.map((tab, i) => {
             const Icon = TAB_ICONS[i];
@@ -240,7 +238,7 @@ export default function CommunitySection({ isDarkMode }) {
               <button
                 key={i}
                 onClick={() => setActiveTab(i)}
-                className={`flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${
+                className={`flex items-center gap-1.5 md:gap-2 px-3 md:px-5 py-2 md:py-2.5 rounded-full text-xs md:text-sm font-medium transition-all duration-300 ${
                   activeTab === i
                     ? 'bg-orange-500 text-white shadow-lg shadow-orange-500/30'
                     : 'bg-white/5 text-gray-400 hover:bg-white/10'

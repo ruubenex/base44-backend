@@ -67,13 +67,13 @@ export default function FooterCTA({ isDarkMode }) {
               <Handshake className="w-6 h-6 text-orange-400" />
             </div>
             <div>
-              <h4 className="text-white font-bold">{ft.partnersTitle || 'Programa de Parceiros'} 🤝</h4>
-              <p className="text-gray-400 text-sm">{ft.partnersDesc || '70% comissão · App gratuito · Cupom exclusivo'}</p>
+              <h4 className="text-white font-bold">{ft.partnersTitle} 🤝</h4>
+              <p className="text-gray-400 text-sm">{ft.partnersDesc}</p>
             </div>
           </div>
           <Link to={partnersPath}>
             <Button className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white rounded-xl px-6 group">
-              {ft.partnersBtn || 'Quero ser parceiro'}
+              {ft.partnersBtn}
               <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
           </Link>
@@ -91,7 +91,7 @@ export default function FooterCTA({ isDarkMode }) {
             <span>•</span>
             <a href="#features" className={`text-sm hover:text-orange-500 transition-colors ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>{ft.featuresLink}</a>
             <span>•</span>
-            <Link to={partnersPath} className={`text-sm hover:text-orange-500 transition-colors ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>{ft.partnersLink || 'Programa de Parceiros'}</Link>
+            <Link to={partnersPath} className={`text-sm hover:text-orange-500 transition-colors ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>{ft.partnersLink}</Link>
             <span>•</span>
             <a href={instagramUrl} target="_blank" rel="noopener noreferrer" className={`inline-flex items-center gap-1 text-sm hover:text-orange-500 transition-colors ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>
               <Instagram className="w-4 h-4" />

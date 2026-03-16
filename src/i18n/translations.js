@@ -15,6 +15,7 @@ export const translations = {
       scrollHint: "Role para descobrir",
       calories: "Calorias",
       protein: "Proteína",
+      activeUsers: "usuários ativos",
     },
     features: {
       badge: "Funcionalidades Poderosas",
@@ -24,7 +25,7 @@ export const translations = {
       items: [
         { title: "Escaneie sua Refeição", description: "Tire uma foto do seu prato e nossa IA identifica cada alimento instantaneamente." },
         { title: "85% de Precisão", description: "A IA mais precisa do mercado. Resultados confiáveis para o seu controle nutricional." },
-        { title: "Metas Personalizadas", description: "Defina seus objetivos e acompanhe seu progresso diário com metas de calorias e macros." },
+        { title: "Restrições & Dietas", description: "Configure sua dieta e a IA adapta tudo automaticamente para você." },
         { title: "Controle de Hidratação", description: "Acompanhe sua ingestão de água diária e receba lembretes para se manter hidratado." },
         { title: "Desafios & Sequências", description: "Complete desafios diários, mantenha sua sequência e ganhe premiações exclusivas." },
         { title: "Ranking com Amigos", description: "Compete com seus amigos, veja quem está no topo e mantenha a motivação em alta." },
@@ -35,6 +36,12 @@ export const translations = {
         { value: "1M+", label: "Refeições Escaneadas" },
         { value: "4.9", label: "Nota na App Store" },
       ],
+      progressLabels: { protein: "Proteína", carbs: "Carboidratos", fats: "Gorduras" },
+      dietTags: { vegan: "Vegano", keto: "Keto", glutenFree: "Sem Glúten", lactoseFree: "Sem Lactose", allergy: "Alergia", carnivore: "Carnívoro" },
+      goalLabel: "da meta",
+      consumed: "consumidos",
+      challenges: { hydration: "Hidratação", fullDiary: "Diário completo", proteinGoal: "Meta proteína", exercise: "Exercício" },
+      exercises: { running: "Corrida 30min", weights: "Musculação", cycling: "Ciclismo" },
     },
     ai: {
       badge: "Inteligência Artificial Avançada",
@@ -49,6 +56,7 @@ export const translations = {
       ],
       aiActive: "IA Ativa",
       plan40days: "Plano de 40 dias",
+      dietTags: { vegan: "Vegano", keto: "Keto", glutenFree: "Sem Glúten", lactoseFree: "Sem Lactose", carnivore: "Carnívoro", cutting: "Cutting" },
     },
     showcase: {
       badge: "Veja o App por Dentro",
@@ -146,6 +154,10 @@ export const translations = {
       contact: "Contato",
       instagram: "Instagram",
       copyright: "© 2024 CamCal. Todos os direitos reservados.",
+      partnersTitle: "Programa de Parceiros",
+      partnersDesc: "70% comissão · App gratuito · Cupom exclusivo",
+      partnersBtn: "Quero ser parceiro",
+      partnersLink: "Programa de Parceiros",
     },
     partners: {
       badge: "PROGRAMA DE PARCEIROS",
@@ -202,6 +214,7 @@ export const translations = {
       scrollHint: "Scroll to discover",
       calories: "Calories",
       protein: "Protein",
+      activeUsers: "active users",
     },
     features: {
       badge: "Powerful Features",
@@ -211,7 +224,7 @@ export const translations = {
       items: [
         { title: "Scan your Meal", description: "Take a photo of your plate and our AI identifies each food instantly." },
         { title: "85% Accuracy", description: "The most accurate AI on the market. Reliable results for your nutritional control." },
-        { title: "Personalized Goals", description: "Set your objectives and track your daily progress with calorie and macro goals." },
+        { title: "Restrictions & Diets", description: "Set up your diet and the AI adapts everything automatically for you." },
         { title: "Hydration Tracking", description: "Track your daily water intake and receive reminders to stay hydrated." },
         { title: "Challenges & Streaks", description: "Complete daily challenges, keep your streak and earn exclusive rewards." },
         { title: "Friends Ranking", description: "Compete with your friends, see who's on top and keep motivation high." },
@@ -222,6 +235,12 @@ export const translations = {
         { value: "1M+", label: "Meals Scanned" },
         { value: "4.9", label: "App Store Rating" },
       ],
+      progressLabels: { protein: "Protein", carbs: "Carbs", fats: "Fats" },
+      dietTags: { vegan: "Vegan", keto: "Keto", glutenFree: "Gluten Free", lactoseFree: "Lactose Free", allergy: "Allergy", carnivore: "Carnivore" },
+      goalLabel: "of goal",
+      consumed: "consumed",
+      challenges: { hydration: "Hydration", fullDiary: "Full diary", proteinGoal: "Protein goal", exercise: "Exercise" },
+      exercises: { running: "Running 30min", weights: "Weight Training", cycling: "Cycling" },
     },
     ai: {
       badge: "Advanced Artificial Intelligence",
@@ -236,6 +255,7 @@ export const translations = {
       ],
       aiActive: "AI Active",
       plan40days: "40-day Plan",
+      dietTags: { vegan: "Vegan", keto: "Keto", glutenFree: "Gluten Free", lactoseFree: "Lactose Free", carnivore: "Carnivore", cutting: "Cutting" },
     },
     showcase: {
       badge: "See the App Inside",
@@ -333,6 +353,10 @@ export const translations = {
       contact: "Contact",
       instagram: "Instagram",
       copyright: "© 2024 CamCal. All rights reserved.",
+      partnersTitle: "Partner Program",
+      partnersDesc: "70% commission · Free app · Exclusive coupon",
+      partnersBtn: "Become a partner",
+      partnersLink: "Partner Program",
     },
     partners: {
       badge: "PARTNER PROGRAM",
@@ -389,6 +413,7 @@ export const translations = {
       scrollHint: "Faites défiler pour découvrir",
       calories: "Calories",
       protein: "Protéines",
+      activeUsers: "utilisateurs actifs",
     },
     features: {
       badge: "Fonctionnalités Puissantes",
@@ -398,7 +423,7 @@ export const translations = {
       items: [
         { title: "Scannez votre Repas", description: "Prenez une photo de votre assiette et notre IA identifie chaque aliment instantanément." },
         { title: "85% de Précision", description: "L'IA la plus précise du marché. Des résultats fiables pour votre contrôle nutritionnel." },
-        { title: "Objectifs Personnalisés", description: "Définissez vos objectifs et suivez vos progrès quotidiens avec des objectifs de calories et de macros." },
+        { title: "Restrictions & Régimes", description: "Configurez votre régime et l'IA adapte tout automatiquement pour vous." },
         { title: "Suivi d'Hydratation", description: "Suivez votre consommation d'eau quotidienne et recevez des rappels pour rester hydraté." },
         { title: "Défis & Séries", description: "Complétez des défis quotidiens, maintenez votre série et gagnez des récompenses exclusives." },
         { title: "Classement entre Amis", description: "Rivalisez avec vos amis, voyez qui est en tête et gardez la motivation au maximum." },
@@ -409,6 +434,12 @@ export const translations = {
         { value: "1M+", label: "Repas Scannés" },
         { value: "4.9", label: "Note App Store" },
       ],
+      progressLabels: { protein: "Protéines", carbs: "Glucides", fats: "Lipides" },
+      dietTags: { vegan: "Végan", keto: "Kéto", glutenFree: "Sans Gluten", lactoseFree: "Sans Lactose", allergy: "Allergie", carnivore: "Carnivore" },
+      goalLabel: "de l'objectif",
+      consumed: "consommés",
+      challenges: { hydration: "Hydratation", fullDiary: "Journal complet", proteinGoal: "Objectif protéines", exercise: "Exercice" },
+      exercises: { running: "Course 30min", weights: "Musculation", cycling: "Cyclisme" },
     },
     ai: {
       badge: "Intelligence Artificielle Avancée",
@@ -423,6 +454,7 @@ export const translations = {
       ],
       aiActive: "IA Active",
       plan40days: "Plan de 40 jours",
+      dietTags: { vegan: "Végan", keto: "Kéto", glutenFree: "Sans Gluten", lactoseFree: "Sans Lactose", carnivore: "Carnivore", cutting: "Sèche" },
     },
     showcase: {
       badge: "Découvrez l'App de l'Intérieur",
@@ -520,6 +552,10 @@ export const translations = {
       contact: "Contact",
       instagram: "Instagram",
       copyright: "© 2024 CamCal. Tous droits réservés.",
+      partnersTitle: "Programme Partenaires",
+      partnersDesc: "70% commission · App gratuite · Coupon exclusif",
+      partnersBtn: "Devenir partenaire",
+      partnersLink: "Programme Partenaires",
     },
     partners: {
       badge: "PROGRAMME PARTENAIRES",
@@ -576,6 +612,7 @@ export const translations = {
       scrollHint: "Desplázate para descubrir",
       calories: "Calorías",
       protein: "Proteína",
+      activeUsers: "usuarios activos",
     },
     features: {
       badge: "Funcionalidades Poderosas",
@@ -585,7 +622,7 @@ export const translations = {
       items: [
         { title: "Escanea tu Comida", description: "Toma una foto de tu plato y nuestra IA identifica cada alimento instantáneamente." },
         { title: "85% de Precisión", description: "La IA más precisa del mercado. Resultados confiables para tu control nutricional." },
-        { title: "Metas Personalizadas", description: "Define tus objetivos y sigue tu progreso diario con metas de calorías y macros." },
+        { title: "Restricciones & Dietas", description: "Configura tu dieta y la IA adapta todo automáticamente para ti." },
         { title: "Control de Hidratación", description: "Controla tu ingesta de agua diaria y recibe recordatorios para mantenerte hidratado." },
         { title: "Desafíos & Rachas", description: "Completa desafíos diarios, mantén tu racha y gana premios exclusivos." },
         { title: "Ranking con Amigos", description: "Compite con tus amigos, mira quién está en la cima y mantén la motivación alta." },
@@ -596,6 +633,12 @@ export const translations = {
         { value: "1M+", label: "Comidas Escaneadas" },
         { value: "4.9", label: "Nota en App Store" },
       ],
+      progressLabels: { protein: "Proteína", carbs: "Carbohidratos", fats: "Grasas" },
+      dietTags: { vegan: "Vegano", keto: "Keto", glutenFree: "Sin Gluten", lactoseFree: "Sin Lactosa", allergy: "Alergia", carnivore: "Carnívoro" },
+      goalLabel: "de la meta",
+      consumed: "consumidos",
+      challenges: { hydration: "Hidratación", fullDiary: "Diario completo", proteinGoal: "Meta proteína", exercise: "Ejercicio" },
+      exercises: { running: "Carrera 30min", weights: "Musculación", cycling: "Ciclismo" },
     },
     ai: {
       badge: "Inteligencia Artificial Avanzada",
@@ -610,6 +653,7 @@ export const translations = {
       ],
       aiActive: "IA Activa",
       plan40days: "Plan de 40 días",
+      dietTags: { vegan: "Vegano", keto: "Keto", glutenFree: "Sin Gluten", lactoseFree: "Sin Lactosa", carnivore: "Carnívoro", cutting: "Definición" },
     },
     showcase: {
       badge: "Mira la App por Dentro",
@@ -707,6 +751,10 @@ export const translations = {
       contact: "Contacto",
       instagram: "Instagram",
       copyright: "© 2024 CamCal. Todos los derechos reservados.",
+      partnersTitle: "Programa de Socios",
+      partnersDesc: "70% comisión · App gratuita · Cupón exclusivo",
+      partnersBtn: "Quiero ser socio",
+      partnersLink: "Programa de Socios",
     },
     partners: {
       badge: "PROGRAMA DE SOCIOS",
@@ -763,6 +811,7 @@ export const translations = {
       scrollHint: "Scorri per scoprire",
       calories: "Calorie",
       protein: "Proteine",
+      activeUsers: "utenti attivi",
     },
     features: {
       badge: "Funzionalità Potenti",
@@ -772,7 +821,7 @@ export const translations = {
       items: [
         { title: "Scansiona il tuo Pasto", description: "Scatta una foto del tuo piatto e la nostra IA identifica ogni alimento istantaneamente." },
         { title: "85% di Precisione", description: "L'IA più precisa sul mercato. Risultati affidabili per il tuo controllo nutrizionale." },
-        { title: "Obiettivi Personalizzati", description: "Imposta i tuoi obiettivi e monitora i progressi giornalieri con obiettivi di calorie e macro." },
+        { title: "Restrizioni & Diete", description: "Configura la tua dieta e l'IA adatta tutto automaticamente per te." },
         { title: "Monitoraggio Idratazione", description: "Monitora l'assunzione giornaliera di acqua e ricevi promemoria per restare idratato." },
         { title: "Sfide & Serie", description: "Completa sfide giornaliere, mantieni la tua serie e guadagna premi esclusivi." },
         { title: "Classifica con Amici", description: "Competi con i tuoi amici, vedi chi è in cima e mantieni alta la motivazione." },
@@ -783,6 +832,12 @@ export const translations = {
         { value: "1M+", label: "Pasti Scansionati" },
         { value: "4.9", label: "Voto App Store" },
       ],
+      progressLabels: { protein: "Proteine", carbs: "Carboidrati", fats: "Grassi" },
+      dietTags: { vegan: "Vegano", keto: "Keto", glutenFree: "Senza Glutine", lactoseFree: "Senza Lattosio", allergy: "Allergia", carnivore: "Carnivoro" },
+      goalLabel: "dell'obiettivo",
+      consumed: "consumati",
+      challenges: { hydration: "Idratazione", fullDiary: "Diario completo", proteinGoal: "Obiettivo proteine", exercise: "Esercizio" },
+      exercises: { running: "Corsa 30min", weights: "Pesi", cycling: "Ciclismo" },
     },
     ai: {
       badge: "Intelligenza Artificiale Avanzata",
@@ -797,6 +852,7 @@ export const translations = {
       ],
       aiActive: "IA Attiva",
       plan40days: "Piano di 40 giorni",
+      dietTags: { vegan: "Vegano", keto: "Keto", glutenFree: "Senza Glutine", lactoseFree: "Senza Lattosio", carnivore: "Carnivoro", cutting: "Definizione" },
     },
     showcase: {
       badge: "Guarda l'App dall'Interno",
@@ -894,6 +950,10 @@ export const translations = {
       contact: "Contatto",
       instagram: "Instagram",
       copyright: "© 2024 CamCal. Tutti i diritti riservati.",
+      partnersTitle: "Programma Partner",
+      partnersDesc: "70% commissione · App gratuita · Coupon esclusivo",
+      partnersBtn: "Voglio essere partner",
+      partnersLink: "Programma Partner",
     },
     partners: {
       badge: "PROGRAMMA PARTNER",
@@ -950,6 +1010,7 @@ export const translations = {
       scrollHint: "Scrollen zum Entdecken",
       calories: "Kalorien",
       protein: "Protein",
+      activeUsers: "aktive Nutzer",
     },
     features: {
       badge: "Leistungsstarke Funktionen",
@@ -959,7 +1020,7 @@ export const translations = {
       items: [
         { title: "Mahlzeit scannen", description: "Fotografieren Sie Ihren Teller und unsere KI erkennt sofort jedes Lebensmittel." },
         { title: "85% Genauigkeit", description: "Die genaueste KI auf dem Markt. Zuverlässige Ergebnisse für Ihre Ernährungskontrolle." },
-        { title: "Personalisierte Ziele", description: "Setzen Sie Ihre Ziele und verfolgen Sie Ihren täglichen Fortschritt mit Kalorien- und Makrozielen." },
+        { title: "Einschränkungen & Diäten", description: "Richten Sie Ihre Diät ein und die KI passt alles automatisch für Sie an." },
         { title: "Hydratations-Tracking", description: "Verfolgen Sie Ihre tägliche Wasseraufnahme und erhalten Sie Erinnerungen, um hydriert zu bleiben." },
         { title: "Herausforderungen & Serien", description: "Absolvieren Sie tägliche Challenges, halten Sie Ihre Serie und verdienen Sie exklusive Belohnungen." },
         { title: "Freunde-Ranking", description: "Treten Sie gegen Ihre Freunde an, sehen Sie wer vorne liegt und bleiben Sie motiviert." },
@@ -970,6 +1031,12 @@ export const translations = {
         { value: "1M+", label: "Gescannte Mahlzeiten" },
         { value: "4.9", label: "App Store Bewertung" },
       ],
+      progressLabels: { protein: "Protein", carbs: "Kohlenhydrate", fats: "Fette" },
+      dietTags: { vegan: "Vegan", keto: "Keto", glutenFree: "Glutenfrei", lactoseFree: "Laktosefrei", allergy: "Allergie", carnivore: "Fleischesser" },
+      goalLabel: "des Ziels",
+      consumed: "konsumiert",
+      challenges: { hydration: "Hydratation", fullDiary: "Tagebuch komplett", proteinGoal: "Proteinziel", exercise: "Training" },
+      exercises: { running: "Laufen 30min", weights: "Krafttraining", cycling: "Radfahren" },
     },
     ai: {
       badge: "Fortschrittliche Künstliche Intelligenz",
@@ -984,6 +1051,7 @@ export const translations = {
       ],
       aiActive: "KI Aktiv",
       plan40days: "40-Tage-Plan",
+      dietTags: { vegan: "Vegan", keto: "Keto", glutenFree: "Glutenfrei", lactoseFree: "Laktosefrei", carnivore: "Fleischesser", cutting: "Definitionsphase" },
     },
     showcase: {
       badge: "Die App von Innen sehen",
@@ -1081,6 +1149,10 @@ export const translations = {
       contact: "Kontakt",
       instagram: "Instagram",
       copyright: "© 2024 CamCal. Alle Rechte vorbehalten.",
+      partnersTitle: "Partnerprogramm",
+      partnersDesc: "70% Provision · Kostenlose App · Exklusiver Gutschein",
+      partnersBtn: "Partner werden",
+      partnersLink: "Partnerprogramm",
     },
     partners: {
       badge: "PARTNERPROGRAMM",
