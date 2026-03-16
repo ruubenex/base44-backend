@@ -353,6 +353,10 @@ export const translations = {
       contact: "Contact",
       instagram: "Instagram",
       copyright: "© 2024 CamCal. All rights reserved.",
+      partnersTitle: "Partner Program",
+      partnersDesc: "70% commission · Free app · Exclusive coupon",
+      partnersBtn: "Become a partner",
+      partnersLink: "Partner Program",
     },
     partners: {
       badge: "PARTNER PROGRAM",
