@@ -950,6 +950,10 @@ export const translations = {
       contact: "Contatto",
       instagram: "Instagram",
       copyright: "© 2024 CamCal. Tutti i diritti riservati.",
+      partnersTitle: "Programma Partner",
+      partnersDesc: "70% commissione · App gratuita · Coupon esclusivo",
+      partnersBtn: "Voglio essere partner",
+      partnersLink: "Programma Partner",
     },
     partners: {
       badge: "PROGRAMMA PARTNER",
