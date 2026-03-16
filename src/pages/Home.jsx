@@ -41,6 +41,7 @@ export default function Home() {
         <HeroSection />
         <FeaturesSection isDarkMode={isDarkMode} />
         <AISection isDarkMode={isDarkMode} />
+        <CommunitySection isDarkMode={isDarkMode} />
         <AppShowcase isDarkMode={isDarkMode} />
         <TestimonialsSection isDarkMode={isDarkMode} />
         <FAQSection isDarkMode={isDarkMode} />
