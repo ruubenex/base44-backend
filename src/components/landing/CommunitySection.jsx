@@ -201,9 +201,7 @@ export default function CommunitySection({ isDarkMode }) {
   return (
     <section
       ref={sectionRef}
-      className={`py-24 md:py-32 relative overflow-hidden transition-colors duration-1000 ${
-        isDarkMode ? 'bg-[#0A0A0A]' : 'bg-[#0A0A0A]'
-      }`}
+      className={`py-16 md:py-32 relative overflow-hidden transition-colors duration-1000 bg-[#0A0A0A]`}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
