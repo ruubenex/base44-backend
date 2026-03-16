@@ -67,8 +67,8 @@ export default function FooterCTA({ isDarkMode }) {
               <Handshake className="w-6 h-6 text-orange-400" />
             </div>
             <div>
-              <h4 className="text-white font-bold">{ft.partnersTitle || 'Programa de Parceiros'} 🤝</h4>
-              <p className="text-gray-400 text-sm">{ft.partnersDesc || '70% comissão · App gratuito · Cupom exclusivo'}</p>
+              <h4 className="text-white font-bold">{ft.partnersTitle} 🤝</h4>
+              <p className="text-gray-400 text-sm">{ft.partnersDesc}</p>
             </div>
           </div>
           <Link to={partnersPath}>
