@@ -38,11 +38,11 @@ export default function FooterCTA({ isDarkMode }) {
             <p className="text-lg md:text-xl mb-10 max-w-2xl mx-auto text-gray-400">{ft.subtitle}</p>
 
             <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={isInView ? { opacity: 1, scale: 1 } : {}} transition={{ delay: 0.3, duration: 0.5 }}>
-              <a href="https://camcal.pro/" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" className="group bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-10 py-7 text-xl rounded-2xl shadow-xl shadow-orange-500/30 hover:shadow-2xl hover:shadow-orange-500/50 transition-all duration-300 hover:scale-105">
-                  <Flame className="w-6 h-6 mr-2" />
+              <a href="https://camcal.pro/" target="_blank" rel="noopener noreferrer" className="block w-full sm:w-auto">
+                <Button size="lg" className="w-full sm:w-auto group bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 sm:px-10 py-6 sm:py-7 text-lg sm:text-xl rounded-2xl shadow-xl shadow-orange-500/30 hover:shadow-2xl hover:shadow-orange-500/50 transition-all duration-300 hover:scale-105">
+                  <Flame className="w-5 h-5 sm:w-6 sm:h-6 mr-2" />
                   {ft.cta}
-                  <ArrowRight className="w-6 h-6 ml-2 group-hover:translate-x-2 transition-transform" />
+                  <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 ml-2 group-hover:translate-x-2 transition-transform" />
                 </Button>
               </a>
             </motion.div>
