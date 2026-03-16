@@ -240,7 +240,7 @@ export default function CommunitySection({ isDarkMode }) {
               <button
                 key={i}
                 onClick={() => setActiveTab(i)}
-                className={`flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${
+                className={`flex items-center gap-1.5 md:gap-2 px-3 md:px-5 py-2 md:py-2.5 rounded-full text-xs md:text-sm font-medium transition-all duration-300 ${
                   activeTab === i
                     ? 'bg-orange-500 text-white shadow-lg shadow-orange-500/30'
                     : 'bg-white/5 text-gray-400 hover:bg-white/10'
