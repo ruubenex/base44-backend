@@ -206,7 +206,7 @@ export default function Partners() {
               </Button>
             </a>
             <a href={`mailto:${EMAIL}`}>
-              <Button size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-6 text-lg rounded-2xl">
+              <Button size="lg" className="bg-white/10 border border-white/20 text-white hover:bg-white/20 px-8 py-6 text-lg rounded-2xl backdrop-blur-sm">
                 <Mail className="w-5 h-5 mr-2" />
                 Email: {EMAIL}
               </Button>
