@@ -73,7 +73,7 @@ export default function FooterCTA({ isDarkMode }) {
           </div>
           <Link to={partnersPath}>
             <Button className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white rounded-xl px-6 group">
-              {ft.partnersBtn || 'Quero ser parceiro'}
+              {ft.partnersBtn}
               <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
           </Link>
