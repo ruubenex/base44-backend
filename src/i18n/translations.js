@@ -15,6 +15,7 @@ export const translations = {
       scrollHint: "Role para descobrir",
       calories: "Calorias",
       protein: "Proteína",
+      activeUsers: "usuários ativos",
     },
     features: {
       badge: "Funcionalidades Poderosas",
