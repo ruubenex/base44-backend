@@ -56,6 +56,7 @@ export const translations = {
       ],
       aiActive: "IA Ativa",
       plan40days: "Plano de 40 dias",
+      dietTags: { vegan: "Vegano", keto: "Keto", glutenFree: "Sem Glúten", lactoseFree: "Sem Lactose", carnivore: "Carnívoro", cutting: "Cutting" },
     },
     showcase: {
       badge: "Veja o App por Dentro",
