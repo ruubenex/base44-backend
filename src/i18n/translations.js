@@ -612,6 +612,7 @@ export const translations = {
       scrollHint: "Desplázate para descubrir",
       calories: "Calorías",
       protein: "Proteína",
+      activeUsers: "usuarios activos",
     },
     features: {
       badge: "Funcionalidades Poderosas",
@@ -621,7 +622,7 @@ export const translations = {
       items: [
         { title: "Escanea tu Comida", description: "Toma una foto de tu plato y nuestra IA identifica cada alimento instantáneamente." },
         { title: "85% de Precisión", description: "La IA más precisa del mercado. Resultados confiables para tu control nutricional." },
-        { title: "Metas Personalizadas", description: "Define tus objetivos y sigue tu progreso diario con metas de calorías y macros." },
+        { title: "Restricciones & Dietas", description: "Configura tu dieta y la IA adapta todo automáticamente para ti." },
         { title: "Control de Hidratación", description: "Controla tu ingesta de agua diaria y recibe recordatorios para mantenerte hidratado." },
         { title: "Desafíos & Rachas", description: "Completa desafíos diarios, mantén tu racha y gana premios exclusivos." },
         { title: "Ranking con Amigos", description: "Compite con tus amigos, mira quién está en la cima y mantén la motivación alta." },
@@ -632,6 +633,12 @@ export const translations = {
         { value: "1M+", label: "Comidas Escaneadas" },
         { value: "4.9", label: "Nota en App Store" },
       ],
+      progressLabels: { protein: "Proteína", carbs: "Carbohidratos", fats: "Grasas" },
+      dietTags: { vegan: "Vegano", keto: "Keto", glutenFree: "Sin Gluten", lactoseFree: "Sin Lactosa", allergy: "Alergia", carnivore: "Carnívoro" },
+      goalLabel: "de la meta",
+      consumed: "consumidos",
+      challenges: { hydration: "Hidratación", fullDiary: "Diario completo", proteinGoal: "Meta proteína", exercise: "Ejercicio" },
+      exercises: { running: "Carrera 30min", weights: "Musculación", cycling: "Ciclismo" },
     },
     ai: {
       badge: "Inteligencia Artificial Avanzada",
@@ -646,6 +653,7 @@ export const translations = {
       ],
       aiActive: "IA Activa",
       plan40days: "Plan de 40 días",
+      dietTags: { vegan: "Vegano", keto: "Keto", glutenFree: "Sin Gluten", lactoseFree: "Sin Lactosa", carnivore: "Carnívoro", cutting: "Definición" },
     },
     showcase: {
       badge: "Mira la App por Dentro",
