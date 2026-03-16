@@ -3,13 +3,15 @@ import { motion, useInView } from 'framer-motion';
 import { ArrowRight, Flame, Zap, Heart, Instagram, Handshake } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/i18n/LanguageContext';
+import { Link } from 'react-router-dom';
 import logoSombra from '@/assets/logocomsombra.png';
 
 export default function FooterCTA({ isDarkMode }) {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   const ft = t.footer;
+  const partnersPath = lang === 'pt' ? '/partners' : `/${lang}/partners`;
 
   return (
     <section ref={sectionRef} className={`py-24 md:py-32 relative overflow-hidden transition-colors duration-1000 ${isDarkMode ? 'bg-[#0A0A0A]' : 'bg-gradient-to-b from-white to-orange-50'}`}>
@@ -68,12 +70,12 @@ export default function FooterCTA({ isDarkMode }) {
               <p className="text-gray-400 text-sm">{ft.partnersDesc || '70% comissão · App gratuito · Cupom exclusivo'}</p>
             </div>
           </div>
-          <a href="https://camcal.pro/" target="_blank" rel="noopener noreferrer">
+          <Link to={partnersPath}>
             <Button className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white rounded-xl px-6 group">
               {ft.partnersBtn || 'Quero ser parceiro'}
               <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
-          </a>
+          </Link>
         </motion.div>
 
         {/* Footer */}
@@ -88,7 +90,7 @@ export default function FooterCTA({ isDarkMode }) {
             <span>•</span>
             <a href="#features" className={`text-sm hover:text-orange-500 transition-colors ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>{ft.featuresLink}</a>
             <span>•</span>
-            <a href="https://camcal.pro/" target="_blank" rel="noopener noreferrer" className={`text-sm hover:text-orange-500 transition-colors ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>{ft.partnersLink || 'Programa de Parceiros'}</a>
+            <Link to={partnersPath} className={`text-sm hover:text-orange-500 transition-colors ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>{ft.partnersLink || 'Programa de Parceiros'}</Link>
             <span>•</span>
             <a href="https://www.instagram.com/camcal.ia/" target="_blank" rel="noopener noreferrer" className={`inline-flex items-center gap-1 text-sm hover:text-orange-500 transition-colors ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>
               <Instagram className="w-4 h-4" />
