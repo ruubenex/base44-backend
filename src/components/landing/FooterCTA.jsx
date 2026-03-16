@@ -70,12 +70,12 @@ export default function FooterCTA({ isDarkMode }) {
               <p className="text-gray-400 text-sm">{ft.partnersDesc || '70% comissão · App gratuito · Cupom exclusivo'}</p>
             </div>
           </div>
-          <a href="https://camcal.pro/" target="_blank" rel="noopener noreferrer">
+          <Link to={partnersPath}>
             <Button className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white rounded-xl px-6 group">
               {ft.partnersBtn || 'Quero ser parceiro'}
               <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
-          </a>
+          </Link>
         </motion.div>
 
         {/* Footer */}
