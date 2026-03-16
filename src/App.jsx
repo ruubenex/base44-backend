@@ -7,6 +7,7 @@ import Home from '@/pages/Home';
 import Partners from '@/pages/Partners';
 import { LanguageProvider } from '@/i18n/LanguageContext';
 import LanguageRedirect from '@/i18n/LanguageRedirect';
+import { ScrollToTop } from '@/components/ScrollToTop';
 
 function LanguageHome() {
   return (
@@ -28,6 +29,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClientInstance}>
       <Router>
+        <ScrollToTop />
         <LanguageRedirect />
         <Routes>
           <Route path="/" element={<LanguageHome />} />

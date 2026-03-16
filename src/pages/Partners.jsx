@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/i18n/LanguageContext';
 import { useNavigate } from 'react-router-dom';
 
-const WHATSAPP_LINK = 'https://wa.me/554399628311';
+const WHATSAPP_LINK = 'https://wa.me/5543996283118';
 const EMAIL = 'contact@camcal.agency';
 
 export default function Partners() {
@@ -34,15 +34,25 @@ export default function Partners() {
         <div className="absolute inset-0">
           <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-br from-orange-500/20 to-red-500/10 rounded-full blur-3xl" />
         </div>
+        {/* Floating dots */}
+        {[...Array(8)].map((_, i) => (
+          <motion.div
+            key={i}
+            className="absolute w-1.5 h-1.5 rounded-full bg-white/20"
+            style={{ top: `${15 + i * 10}%`, left: `${10 + (i * 17) % 80}%` }}
+            animate={{ y: [0, -10, 0], opacity: [0.2, 0.5, 0.2] }}
+            transition={{ duration: 3 + i * 0.5, repeat: Infinity }}
+          />
+        ))}
         <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/10 border border-orange-500/20 text-orange-400 text-sm font-medium mb-8">
+            <span className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-orange-500/10 border border-orange-500/20 text-orange-400 text-sm font-medium mb-8">
               <Sparkles className="w-4 h-4" />
               {p.badge}
             </span>
           </motion.div>
 
-          <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.1 }} className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
+          <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.1 }} className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight">
             {p.heroTitle1}
             <br />
             <span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">{p.heroTitle2}</span>
@@ -52,9 +62,9 @@ export default function Partners() {
             {p.heroSubtitle}
           </motion.p>
 
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.3 }} className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.3 }} className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14">
             <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-6 text-lg rounded-2xl">
+              <Button size="lg" className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-6 text-lg rounded-2xl shadow-lg shadow-orange-500/20">
                 <MessageCircle className="w-5 h-5 mr-2" />
                 {p.whatsappBtn}
               </Button>
@@ -74,7 +84,7 @@ export default function Partners() {
               { icon: Users, value: '50k+', label: p.statUsers },
               { icon: Star, value: '4.9', label: 'App Store' },
             ].map((stat, i) => (
-              <div key={i} className="flex flex-col items-center gap-1 px-8 py-4 rounded-2xl bg-white/5 border border-white/10">
+              <div key={i} className="flex flex-col items-center gap-1 px-8 py-5 rounded-2xl bg-white/5 border border-white/10 min-w-[140px]">
                 <stat.icon className="w-5 h-5 text-orange-400 mb-1" />
                 <span className="text-2xl font-bold">{stat.value}</span>
                 <span className="text-sm text-gray-400">{stat.label}</span>
@@ -85,7 +95,7 @@ export default function Partners() {
       </section>
 
       {/* Divider wave */}
-      <div className="w-full h-16 bg-gradient-to-b from-[#0A0A0A] to-white" />
+      <div className="w-full h-20 bg-gradient-to-b from-[#0A0A0A] to-white" />
 
       {/* Plans Section */}
       <section className="py-20 bg-white">
@@ -97,12 +107,12 @@ export default function Partners() {
                 <BarChart3 className="w-7 h-7 text-orange-500" />
               </div>
               <span className="text-orange-500 font-semibold text-sm uppercase tracking-wider">{p.affiliateLabel}</span>
-              <h3 className="text-xl font-bold text-gray-900 mt-2 mb-4">{p.affiliateTitle}</h3>
+              <h3 className="text-xl font-bold text-gray-900 mt-2 mb-6">{p.affiliateTitle}</h3>
               <div className="rounded-2xl bg-white border border-gray-200 p-6 text-center mb-6">
                 <span className="text-5xl font-bold bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">30–40%</span>
-                <p className="text-gray-500 mt-1">{p.commissionPerSale}</p>
+                <p className="text-gray-500 mt-2">{p.commissionPerSale}</p>
               </div>
-              <ul className="space-y-3 flex-1 mb-8">
+              <ul className="space-y-4 flex-1 mb-8">
                 {p.affiliateFeatures.map((f, i) => (
                   <li key={i} className="flex items-center gap-3 text-gray-700">
                     <Check className="w-5 h-5 text-orange-500 flex-shrink-0" />
@@ -130,12 +140,12 @@ export default function Partners() {
                 <Zap className="w-7 h-7 text-orange-400" />
               </div>
               <span className="text-orange-400 font-semibold text-sm uppercase tracking-wider">{p.vipLabel}</span>
-              <h3 className="text-xl font-bold text-white mt-2 mb-4">{p.vipTitle}</h3>
+              <h3 className="text-xl font-bold text-white mt-2 mb-6">{p.vipTitle}</h3>
               <div className="rounded-2xl bg-white/5 border border-white/10 p-6 text-center mb-6">
                 <span className="text-5xl font-bold bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">70%</span>
-                <p className="text-gray-400 mt-1">{p.commissionPerSale}</p>
+                <p className="text-gray-400 mt-2">{p.commissionPerSale}</p>
               </div>
-              <ul className="space-y-3 flex-1 mb-8">
+              <ul className="space-y-4 flex-1 mb-8">
                 {p.vipFeatures.map((f, i) => (
                   <li key={i} className="flex items-center gap-3 text-gray-300">
                     <Check className="w-5 h-5 text-orange-400 flex-shrink-0" />
@@ -161,12 +171,14 @@ export default function Partners() {
             <Sparkles className="w-4 h-4" />
             {p.howItWorksLabel}
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">{p.howItWorksTitle}</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-14">{p.howItWorksTitle}</h2>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 relative">
+            {/* Connecting line */}
+            <div className="hidden md:block absolute top-6 left-[calc(16.67%+24px)] right-[calc(16.67%+24px)] h-0.5 bg-orange-200" />
             {p.howItWorksSteps.map((step, i) => (
-              <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.15 }} className="flex flex-col items-center">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-r from-orange-500 to-orange-600 flex items-center justify-center text-white font-bold text-lg mb-4">
+              <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.15 }} className="flex flex-col items-center relative">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-r from-orange-500 to-orange-600 flex items-center justify-center text-white font-bold text-lg mb-5 relative z-10">
                   {i + 1}
                 </div>
                 <h3 className="text-lg font-bold text-gray-900 mb-2">{step.title}</h3>
@@ -178,15 +190,15 @@ export default function Partners() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-b from-gray-800 to-[#0A0A0A]">
+      <section className="py-24 bg-gradient-to-b from-gray-800 to-[#0A0A0A]">
         <div className="max-w-3xl mx-auto px-4 text-center">
-          <div className="w-16 h-16 rounded-full bg-gradient-to-r from-orange-500 to-orange-600 flex items-center justify-center mx-auto mb-6">
+          <div className="w-16 h-16 rounded-2xl bg-gradient-to-r from-orange-500 to-orange-600 flex items-center justify-center mx-auto mb-8">
             <Heart className="w-8 h-8 text-white" />
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">{p.ctaTitle}</h2>
-          <p className="text-gray-400 mb-8">{p.ctaSubtitle}</p>
+          <p className="text-gray-400 mb-10">{p.ctaSubtitle}</p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
             <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-6 text-lg rounded-2xl">
                 <MessageCircle className="w-5 h-5 mr-2" />
@@ -216,12 +228,12 @@ export default function Partners() {
           <div className="space-y-3">
             {p.faqItems.map((item, i) => (
               <div key={i} className="border border-gray-200 rounded-2xl overflow-hidden">
-                <button onClick={() => setOpenFaq(openFaq === i ? null : i)} className="w-full flex items-center justify-between px-6 py-4 text-left text-gray-900 font-medium hover:bg-gray-50 transition-colors">
+                <button onClick={() => setOpenFaq(openFaq === i ? null : i)} className="w-full flex items-center justify-between px-6 py-5 text-left text-gray-900 font-medium hover:bg-gray-50 transition-colors">
                   <span>{item.q}</span>
                   {openFaq === i ? <ChevronUp className="w-5 h-5 text-gray-400" /> : <ChevronDown className="w-5 h-5 text-gray-400" />}
                 </button>
                 {openFaq === i && (
-                  <div className="px-6 pb-4 text-gray-600 text-sm leading-relaxed">{item.a}</div>
+                  <div className="px-6 pb-5 text-gray-600 text-sm leading-relaxed">{item.a}</div>
                 )}
               </div>
             ))}
