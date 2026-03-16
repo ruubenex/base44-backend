@@ -232,7 +232,7 @@ export default function CommunitySection({ isDarkMode }) {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="flex items-center justify-center gap-2 mb-12"
+          className="flex flex-wrap items-center justify-center gap-2 mb-8 md:mb-12"
         >
           {c.tabs.map((tab, i) => {
             const Icon = TAB_ICONS[i];
