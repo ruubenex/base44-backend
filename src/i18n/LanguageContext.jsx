@@ -32,6 +32,14 @@ export function LanguageProvider({ children }) {
 
 export function useLanguage() {
   const ctx = useContext(LanguageContext);
-  if (!ctx) throw new Error('useLanguage must be used inside LanguageProvider');
+  if (!ctx) {
+    // Fallback for HMR/edge cases - return default language
+    return {
+      lang: defaultLanguage,
+      t: translations[defaultLanguage],
+      supportedLanguages,
+      setLanguage: () => {},
+    };
+  }
   return ctx;
 }
