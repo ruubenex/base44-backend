@@ -94,8 +94,14 @@ export default function Partners() {
         </div>
       </section>
 
-      {/* Divider wave */}
-      <div className="w-full h-20 bg-gradient-to-b from-[#0A0A0A] to-white" />
+      {/* Wave divider */}
+      <div className="relative">
+        <div className="absolute inset-x-0 top-0 h-20 bg-[#0A0A0A]" />
+        <svg viewBox="0 0 1440 120" className="relative w-full block" preserveAspectRatio="none" style={{ height: '120px' }}>
+          <path d="M0,0 L0,60 Q360,120 720,60 Q1080,0 1440,60 L1440,0 Z" fill="#0A0A0A" />
+          <path d="M0,60 Q360,120 720,60 Q1080,0 1440,60 L1440,120 L0,120 Z" fill="white" />
+        </svg>
+      </div>
 
       {/* Plans Section */}
       <section className="py-20 bg-white">
