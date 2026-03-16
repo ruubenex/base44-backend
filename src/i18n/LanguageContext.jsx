@@ -1,11 +1,12 @@
 import React, { createContext, useContext, useMemo } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import { translations, defaultLanguage, supportedLanguages } from './translations';
 
 const LanguageContext = createContext(null);
 
 export function LanguageProvider({ children }) {
   const { lang } = useParams();
+  const location = useLocation();
   const currentLang = supportedLanguages.includes(lang) ? lang : defaultLanguage;
   const t = translations[currentLang];
   const navigate = useNavigate();
@@ -15,13 +16,24 @@ export function LanguageProvider({ children }) {
     t,
     supportedLanguages,
     setLanguage: (newLang) => {
-      if (newLang === defaultLanguage) {
-        navigate('/');
+      // Preserve subpath (e.g., /partners)
+      const currentPath = location.pathname;
+      // Remove current lang prefix to get subpath
+      let subPath = '';
+      if (lang && currentPath.startsWith(`/${lang}`)) {
+        subPath = currentPath.slice(`/${lang}`.length);
       } else {
-        navigate(`/${newLang}`);
+        // Root language (pt) — path is the subpath itself
+        subPath = currentPath;
+      }
+      
+      if (newLang === defaultLanguage) {
+        navigate(subPath || '/');
+      } else {
+        navigate(`/${newLang}${subPath}`);
       }
     },
-  }), [currentLang, t, navigate]);
+  }), [currentLang, t, navigate, location.pathname, lang]);
 
   return (
     <LanguageContext.Provider value={value}>
