@@ -4,6 +4,7 @@ import { useScroll } from 'framer-motion';
 import HeroSection from '@/components/landing/HeroSection';
 import FeaturesSection from '@/components/landing/FeaturesSection';
 import AISection from '@/components/landing/AISection';
+import CommunitySection from '@/components/landing/CommunitySection';
 import AppShowcase from '@/components/landing/AppShowcase';
 import TestimonialsSection from '@/components/landing/TestimonialsSection';
 import FAQSection from '@/components/landing/FAQSection';
