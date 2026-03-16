@@ -3,6 +3,7 @@ import { motion, useInView } from 'framer-motion';
 import { ArrowRight, Flame, Zap, Heart, Instagram, Handshake } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/i18n/LanguageContext';
+import { Link } from 'react-router-dom';
 import logoSombra from '@/assets/logocomsombra.png';
 
 export default function FooterCTA({ isDarkMode }) {
