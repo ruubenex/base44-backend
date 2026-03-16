@@ -214,6 +214,7 @@ export const translations = {
       scrollHint: "Scroll to discover",
       calories: "Calories",
       protein: "Protein",
+      activeUsers: "active users",
     },
     features: {
       badge: "Powerful Features",
@@ -223,7 +224,7 @@ export const translations = {
       items: [
         { title: "Scan your Meal", description: "Take a photo of your plate and our AI identifies each food instantly." },
         { title: "85% Accuracy", description: "The most accurate AI on the market. Reliable results for your nutritional control." },
-        { title: "Personalized Goals", description: "Set your objectives and track your daily progress with calorie and macro goals." },
+        { title: "Restrictions & Diets", description: "Set up your diet and the AI adapts everything automatically for you." },
         { title: "Hydration Tracking", description: "Track your daily water intake and receive reminders to stay hydrated." },
         { title: "Challenges & Streaks", description: "Complete daily challenges, keep your streak and earn exclusive rewards." },
         { title: "Friends Ranking", description: "Compete with your friends, see who's on top and keep motivation high." },
@@ -234,6 +235,12 @@ export const translations = {
         { value: "1M+", label: "Meals Scanned" },
         { value: "4.9", label: "App Store Rating" },
       ],
+      progressLabels: { protein: "Protein", carbs: "Carbs", fats: "Fats" },
+      dietTags: { vegan: "Vegan", keto: "Keto", glutenFree: "Gluten Free", lactoseFree: "Lactose Free", allergy: "Allergy", carnivore: "Carnivore" },
+      goalLabel: "of goal",
+      consumed: "consumed",
+      challenges: { hydration: "Hydration", fullDiary: "Full diary", proteinGoal: "Protein goal", exercise: "Exercise" },
+      exercises: { running: "Running 30min", weights: "Weight Training", cycling: "Cycling" },
     },
     ai: {
       badge: "Advanced Artificial Intelligence",
@@ -248,6 +255,7 @@ export const translations = {
       ],
       aiActive: "AI Active",
       plan40days: "40-day Plan",
+      dietTags: { vegan: "Vegan", keto: "Keto", glutenFree: "Gluten Free", lactoseFree: "Lactose Free", carnivore: "Carnivore", cutting: "Cutting" },
     },
     showcase: {
       badge: "See the App Inside",
