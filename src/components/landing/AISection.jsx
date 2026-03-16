@@ -5,6 +5,15 @@ import { useLanguage } from '@/i18n/LanguageContext';
 
 const aiIcons = [Dumbbell, ChefHat, ShoppingCart, TrendingUp];
 
+const dietTags = [
+  { emoji: '🌱', label: 'Vegano' },
+  { emoji: '🥑', label: 'Keto' },
+  { emoji: '🌾', label: 'Sem Glúten' },
+  { emoji: '🥛', label: 'Sem Lactose' },
+  { emoji: '🥩', label: 'Carnívoro' },
+  { emoji: '✂️', label: 'Cutting' },
+];
+
 export default function AISection({ isDarkMode }) {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
@@ -31,6 +40,15 @@ export default function AISection({ isDarkMode }) {
             </h2>
 
             <p className={`text-lg mb-8 leading-relaxed ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>{a.description}</p>
+
+            {/* Diet Tags */}
+            <motion.div initial={{ opacity: 0, y: 15 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.4, duration: 0.5 }} className="flex flex-wrap gap-2 mb-8">
+              {dietTags.map((tag, i) => (
+                <span key={i} className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium ${isDarkMode ? 'bg-white/5 text-gray-300 border border-white/10' : 'bg-gray-50 text-gray-700 border border-gray-200'}`}>
+                  {tag.emoji} {tag.label}
+                </span>
+              ))}
+            </motion.div>
 
             <div className="grid sm:grid-cols-2 gap-4">
               {a.items.map((feature, index) => {
