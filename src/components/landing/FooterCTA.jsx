@@ -90,7 +90,7 @@ export default function FooterCTA({ isDarkMode }) {
             <span>•</span>
             <a href="#features" className={`text-sm hover:text-orange-500 transition-colors ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>{ft.featuresLink}</a>
             <span>•</span>
-            <a href="https://camcal.pro/" target="_blank" rel="noopener noreferrer" className={`text-sm hover:text-orange-500 transition-colors ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>{ft.partnersLink || 'Programa de Parceiros'}</a>
+            <Link to={partnersPath} className={`text-sm hover:text-orange-500 transition-colors ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>{ft.partnersLink || 'Programa de Parceiros'}</Link>
             <span>•</span>
             <a href="https://www.instagram.com/camcal.ia/" target="_blank" rel="noopener noreferrer" className={`inline-flex items-center gap-1 text-sm hover:text-orange-500 transition-colors ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>
               <Instagram className="w-4 h-4" />
