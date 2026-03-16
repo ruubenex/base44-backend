@@ -1010,6 +1010,7 @@ export const translations = {
       scrollHint: "Scrollen zum Entdecken",
       calories: "Kalorien",
       protein: "Protein",
+      activeUsers: "aktive Nutzer",
     },
     features: {
       badge: "Leistungsstarke Funktionen",
@@ -1019,7 +1020,7 @@ export const translations = {
       items: [
         { title: "Mahlzeit scannen", description: "Fotografieren Sie Ihren Teller und unsere KI erkennt sofort jedes Lebensmittel." },
         { title: "85% Genauigkeit", description: "Die genaueste KI auf dem Markt. Zuverlässige Ergebnisse für Ihre Ernährungskontrolle." },
-        { title: "Personalisierte Ziele", description: "Setzen Sie Ihre Ziele und verfolgen Sie Ihren täglichen Fortschritt mit Kalorien- und Makrozielen." },
+        { title: "Einschränkungen & Diäten", description: "Richten Sie Ihre Diät ein und die KI passt alles automatisch für Sie an." },
         { title: "Hydratations-Tracking", description: "Verfolgen Sie Ihre tägliche Wasseraufnahme und erhalten Sie Erinnerungen, um hydriert zu bleiben." },
         { title: "Herausforderungen & Serien", description: "Absolvieren Sie tägliche Challenges, halten Sie Ihre Serie und verdienen Sie exklusive Belohnungen." },
         { title: "Freunde-Ranking", description: "Treten Sie gegen Ihre Freunde an, sehen Sie wer vorne liegt und bleiben Sie motiviert." },
@@ -1030,6 +1031,12 @@ export const translations = {
         { value: "1M+", label: "Gescannte Mahlzeiten" },
         { value: "4.9", label: "App Store Bewertung" },
       ],
+      progressLabels: { protein: "Protein", carbs: "Kohlenhydrate", fats: "Fette" },
+      dietTags: { vegan: "Vegan", keto: "Keto", glutenFree: "Glutenfrei", lactoseFree: "Laktosefrei", allergy: "Allergie", carnivore: "Fleischesser" },
+      goalLabel: "des Ziels",
+      consumed: "konsumiert",
+      challenges: { hydration: "Hydratation", fullDiary: "Tagebuch komplett", proteinGoal: "Proteinziel", exercise: "Training" },
+      exercises: { running: "Laufen 30min", weights: "Krafttraining", cycling: "Radfahren" },
     },
     ai: {
       badge: "Fortschrittliche Künstliche Intelligenz",
@@ -1044,6 +1051,7 @@ export const translations = {
       ],
       aiActive: "KI Aktiv",
       plan40days: "40-Tage-Plan",
+      dietTags: { vegan: "Vegan", keto: "Keto", glutenFree: "Glutenfrei", lactoseFree: "Laktosefrei", carnivore: "Fleischesser", cutting: "Definitionsphase" },
     },
     showcase: {
       badge: "Die App von Innen sehen",
