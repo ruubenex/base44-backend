@@ -19,31 +19,31 @@ export default function HeroSection() {
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-white">
-      {/* Background Orbs */}
+      {/* Soft orange blurred background */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-72 md:w-96 h-72 md:h-96 bg-gradient-to-br from-orange-400/20 to-orange-600/10 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '8s' }} />
-        <div className="absolute -bottom-20 -left-40 w-64 md:w-80 h-64 md:h-80 bg-gradient-to-tr from-orange-300/15 to-yellow-400/10 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '10s' }} />
+        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] md:w-[700px] md:h-[700px] bg-gradient-to-br from-orange-300/25 via-orange-200/20 to-orange-100/10 rounded-full blur-[100px]" />
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[400px] h-[300px] md:w-[600px] md:h-[400px] bg-gradient-to-t from-orange-200/15 to-transparent rounded-full blur-[80px]" />
       </div>
 
-      {/* Floating 3D Elements */}
-      <div className="absolute top-32 left-[5%] md:left-[10%] w-12 h-12 md:w-20 lg:w-24 md:h-20 lg:h-24 animate-bounce" style={{ animationDuration: '3s' }}>
-        <div className="w-full h-full bg-gradient-to-br from-orange-400 to-orange-600 rounded-xl md:rounded-2xl shadow-xl shadow-orange-500/30 flex items-center justify-center rotate-12">
-          <span className="text-2xl md:text-3xl lg:text-4xl">🍎</span>
+      {/* Floating 3D Elements - hidden on mobile for clean look */}
+      <div className="hidden md:block absolute top-32 left-[10%] w-20 lg:w-24 h-20 lg:h-24 animate-bounce" style={{ animationDuration: '3s' }}>
+        <div className="w-full h-full bg-gradient-to-br from-orange-400 to-orange-600 rounded-2xl shadow-xl shadow-orange-500/30 flex items-center justify-center rotate-12">
+          <span className="text-3xl lg:text-4xl">🍎</span>
         </div>
       </div>
-      <div className="absolute top-48 right-[5%] md:right-[8%] w-10 h-10 md:w-16 lg:w-20 md:h-16 lg:h-20 animate-bounce" style={{ animationDuration: '3.5s', animationDelay: '0.5s' }}>
-        <div className="w-full h-full bg-gradient-to-br from-green-400 to-green-600 rounded-xl md:rounded-2xl shadow-xl shadow-green-500/30 flex items-center justify-center -rotate-12">
-          <span className="text-xl md:text-2xl lg:text-3xl">🥗</span>
+      <div className="hidden md:block absolute top-48 right-[8%] w-16 lg:w-20 h-16 lg:h-20 animate-bounce" style={{ animationDuration: '3.5s', animationDelay: '0.5s' }}>
+        <div className="w-full h-full bg-gradient-to-br from-green-400 to-green-600 rounded-2xl shadow-xl shadow-green-500/30 flex items-center justify-center -rotate-12">
+          <span className="text-2xl lg:text-3xl">🥗</span>
         </div>
       </div>
-      <div className="hidden sm:block absolute bottom-40 left-[10%] md:left-[15%] w-10 h-10 md:w-14 lg:w-16 md:h-14 lg:h-16 animate-bounce" style={{ animationDuration: '4s', animationDelay: '1s' }}>
-        <div className="w-full h-full bg-gradient-to-br from-yellow-400 to-orange-500 rounded-lg md:rounded-xl shadow-xl shadow-yellow-500/30 flex items-center justify-center">
-          <span className="text-lg md:text-xl lg:text-2xl">🍌</span>
+      <div className="hidden md:block absolute bottom-40 left-[15%] w-14 lg:w-16 h-14 lg:h-16 animate-bounce" style={{ animationDuration: '4s', animationDelay: '1s' }}>
+        <div className="w-full h-full bg-gradient-to-br from-yellow-400 to-orange-500 rounded-xl shadow-xl shadow-yellow-500/30 flex items-center justify-center">
+          <span className="text-xl lg:text-2xl">🍌</span>
         </div>
       </div>
-      <div className="hidden sm:block absolute bottom-32 right-[8%] md:right-[12%] w-10 h-10 md:w-14 lg:w-16 md:h-14 lg:h-16 animate-bounce" style={{ animationDuration: '4.5s', animationDelay: '1.5s' }}>
-        <div className="w-full h-full bg-gradient-to-br from-red-400 to-red-600 rounded-xl md:rounded-2xl shadow-xl shadow-red-500/30 flex items-center justify-center rotate-6">
-          <span className="text-lg md:text-2xl lg:text-3xl">🍓</span>
+      <div className="hidden md:block absolute bottom-32 right-[12%] w-14 lg:w-16 h-14 lg:h-16 animate-bounce" style={{ animationDuration: '4.5s', animationDelay: '1.5s' }}>
+        <div className="w-full h-full bg-gradient-to-br from-red-400 to-red-600 rounded-2xl shadow-xl shadow-red-500/30 flex items-center justify-center rotate-6">
+          <span className="text-2xl lg:text-3xl">🍓</span>
         </div>
       </div>
 
@@ -57,11 +57,11 @@ export default function HeroSection() {
               <span className="text-xs md:text-sm font-medium text-gray-700">{h.badge}</span>
             </motion.div>
 
-            <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3, duration: 0.8 }} className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-gray-900 mb-4 md:mb-6 tracking-tight">
+            <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3, duration: 0.8 }} className="text-4xl sm:text-5xl md:text-5xl lg:text-7xl font-extrabold text-gray-900 mb-4 md:mb-6 tracking-tight leading-[1.1]">
               {h.headline1}{' '}
               <span className="relative inline-block">
                 <span className="relative z-10 bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">{h.headline2}</span>
-                <motion.span initial={{ width: 0 }} animate={{ width: '100%' }} transition={{ delay: 0.8, duration: 0.8 }} className="absolute bottom-1 md:bottom-2 left-0 h-2 md:h-3 bg-orange-200/50 -z-0 rounded-full" />
+                <motion.span initial={{ scaleX: 0 }} animate={{ scaleX: 1 }} transition={{ delay: 1, duration: 0.8, ease: "easeOut" }} className="absolute bottom-0 md:bottom-1 left-0 w-full h-2 md:h-3 bg-orange-300/40 rounded-full origin-left" />
               </span>
             </motion.h1>
 
@@ -71,12 +71,12 @@ export default function HeroSection() {
               {h.descriptionEnd}
             </motion.p>
 
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.7, duration: 0.6 }} className="flex flex-col sm:flex-row items-center lg:items-start gap-3 md:gap-4">
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.7, duration: 0.6 }} className="flex flex-col sm:flex-row items-center lg:items-start gap-3 md:gap-4 px-2 sm:px-0">
               <a href="https://camcal.pro/" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
-                <Button size="lg" className="w-full sm:w-auto group bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-6 md:px-8 py-5 md:py-6 text-base md:text-lg rounded-2xl shadow-xl shadow-orange-500/30 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-300 hover:scale-105">
-                  <Camera className="w-5 h-5 mr-2" />
+                <Button size="lg" className="w-full sm:w-auto group bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 md:px-10 py-6 md:py-7 text-lg md:text-xl rounded-2xl shadow-xl shadow-orange-500/30 hover:shadow-2xl hover:shadow-orange-500/40 transition-all duration-300 hover:scale-105 font-semibold">
+                  <Camera className="w-5 h-5 md:w-6 md:h-6 mr-2" />
                   {h.cta}
-                  <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="w-5 h-5 md:w-6 md:h-6 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </a>
               <Button variant="ghost" size="lg" className="px-6 py-5 md:py-6 text-base md:text-lg text-gray-600 hover:text-orange-600 transition-all duration-300 gap-2" onClick={() => document.getElementById('features').scrollIntoView({ behavior: 'smooth' })}>
@@ -89,7 +89,7 @@ export default function HeroSection() {
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.9, duration: 0.6 }} className="mt-8 md:mt-10 flex items-center justify-center lg:justify-start gap-4">
               <div className="flex -space-x-3">
                 {userAvatars.map((avatar, i) => (
-                  <img key={i} src={avatar} alt="" className="w-8 h-8 md:w-10 md:h-10 rounded-full border-2 border-white object-cover shadow-sm" loading="lazy" />
+                  <img key={i} src={avatar} alt="" className="w-9 h-9 md:w-10 md:h-10 rounded-full border-2 border-white object-cover shadow-sm" loading="lazy" />
                 ))}
               </div>
               <div>
@@ -104,8 +104,8 @@ export default function HeroSection() {
           </div>
 
           {/* Right Side - Phone Mockup */}
-          <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.6, duration: 0.8 }} className="relative flex justify-center lg:justify-end">
-            <div className="relative mx-auto max-w-[240px] sm:max-w-[280px] md:max-w-[320px] lg:max-w-[360px]">
+          <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.6, duration: 0.8 }} className="relative flex justify-center lg:justify-end mt-4 md:mt-0">
+            <div className="relative mx-auto max-w-[260px] sm:max-w-[280px] md:max-w-[320px] lg:max-w-[360px]">
               <div className="absolute inset-0 bg-gradient-to-b from-orange-100/50 to-white/30 backdrop-blur-sm rounded-[2.5rem] md:rounded-[3rem] transform scale-105" />
               <div className="relative bg-black rounded-[2rem] md:rounded-[2.5rem] p-1.5 md:p-2 shadow-2xl shadow-black/20">
                 <div className="bg-white rounded-[1.5rem] md:rounded-[2rem] overflow-hidden">
@@ -113,22 +113,22 @@ export default function HeroSection() {
                 </div>
               </div>
               {/* Floating Calorie Card */}
-              <div className="absolute -left-2 sm:-left-12 md:-left-20 top-1/4 bg-white/90 backdrop-blur-sm rounded-xl md:rounded-2xl p-2 sm:p-3 md:p-4 shadow-lg border border-white/50 animate-bounce" style={{ animationDuration: '3s' }}>
+              <div className="absolute -left-4 sm:-left-12 md:-left-20 top-1/4 bg-white/90 backdrop-blur-sm rounded-xl md:rounded-2xl p-2.5 sm:p-3 md:p-4 shadow-lg border border-white/50 animate-bounce" style={{ animationDuration: '3s' }}>
                 <div className="flex items-center gap-2 md:gap-3">
-                  <div className="w-7 h-7 md:w-10 md:h-10 bg-orange-100 rounded-lg md:rounded-xl flex items-center justify-center"><span className="text-sm md:text-xl">🔥</span></div>
+                  <div className="w-8 h-8 md:w-10 md:h-10 bg-orange-100 rounded-lg md:rounded-xl flex items-center justify-center"><span className="text-base md:text-xl">🔥</span></div>
                   <div>
-                    <p className="text-[9px] md:text-xs text-gray-500">{h.calories}</p>
-                    <p className="text-xs md:text-lg font-bold text-gray-900">2,969 kcal</p>
+                    <p className="text-[10px] md:text-xs text-gray-500">{h.calories}</p>
+                    <p className="text-sm md:text-lg font-bold text-gray-900">2,969 kcal</p>
                   </div>
                 </div>
               </div>
               {/* Floating Protein Card */}
-              <div className="absolute -right-2 sm:-right-12 md:-right-20 top-1/2 bg-white/90 backdrop-blur-sm rounded-xl md:rounded-2xl p-2 sm:p-3 md:p-4 shadow-lg border border-white/50 animate-bounce" style={{ animationDuration: '3.5s', animationDelay: '0.5s' }}>
+              <div className="absolute -right-4 sm:-right-12 md:-right-20 top-1/2 bg-white/90 backdrop-blur-sm rounded-xl md:rounded-2xl p-2.5 sm:p-3 md:p-4 shadow-lg border border-white/50 animate-bounce" style={{ animationDuration: '3.5s', animationDelay: '0.5s' }}>
                 <div className="flex items-center gap-2 md:gap-3">
-                  <div className="w-7 h-7 md:w-10 md:h-10 bg-green-100 rounded-lg md:rounded-xl flex items-center justify-center"><span className="text-sm md:text-xl">💪</span></div>
+                  <div className="w-8 h-8 md:w-10 md:h-10 bg-green-100 rounded-lg md:rounded-xl flex items-center justify-center"><span className="text-base md:text-xl">💪</span></div>
                   <div>
-                    <p className="text-[9px] md:text-xs text-gray-500">{h.protein}</p>
-                    <p className="text-xs md:text-lg font-bold text-gray-900">113g / dia</p>
+                    <p className="text-[10px] md:text-xs text-gray-500">{h.protein}</p>
+                    <p className="text-sm md:text-lg font-bold text-gray-900">113g / dia</p>
                   </div>
                 </div>
               </div>
