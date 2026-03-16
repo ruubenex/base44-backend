@@ -9,8 +9,9 @@ import logoSombra from '@/assets/logocomsombra.png';
 export default function FooterCTA({ isDarkMode }) {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   const ft = t.footer;
+  const partnersPath = lang === 'pt' ? '/partners' : `/${lang}/partners`;
 
   return (
     <section ref={sectionRef} className={`py-24 md:py-32 relative overflow-hidden transition-colors duration-1000 ${isDarkMode ? 'bg-[#0A0A0A]' : 'bg-gradient-to-b from-white to-orange-50'}`}>
