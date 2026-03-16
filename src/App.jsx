@@ -29,6 +29,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClientInstance}>
       <Router>
+        <ScrollToTop />
         <LanguageRedirect />
         <Routes>
           <Route path="/" element={<LanguageHome />} />
