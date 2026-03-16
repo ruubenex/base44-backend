@@ -413,6 +413,7 @@ export const translations = {
       scrollHint: "Faites défiler pour découvrir",
       calories: "Calories",
       protein: "Protéines",
+      activeUsers: "utilisateurs actifs",
     },
     features: {
       badge: "Fonctionnalités Puissantes",
@@ -422,7 +423,7 @@ export const translations = {
       items: [
         { title: "Scannez votre Repas", description: "Prenez une photo de votre assiette et notre IA identifie chaque aliment instantanément." },
         { title: "85% de Précision", description: "L'IA la plus précise du marché. Des résultats fiables pour votre contrôle nutritionnel." },
-        { title: "Objectifs Personnalisés", description: "Définissez vos objectifs et suivez vos progrès quotidiens avec des objectifs de calories et de macros." },
+        { title: "Restrictions & Régimes", description: "Configurez votre régime et l'IA adapte tout automatiquement pour vous." },
         { title: "Suivi d'Hydratation", description: "Suivez votre consommation d'eau quotidienne et recevez des rappels pour rester hydraté." },
         { title: "Défis & Séries", description: "Complétez des défis quotidiens, maintenez votre série et gagnez des récompenses exclusives." },
         { title: "Classement entre Amis", description: "Rivalisez avec vos amis, voyez qui est en tête et gardez la motivation au maximum." },
@@ -433,6 +434,12 @@ export const translations = {
         { value: "1M+", label: "Repas Scannés" },
         { value: "4.9", label: "Note App Store" },
       ],
+      progressLabels: { protein: "Protéines", carbs: "Glucides", fats: "Lipides" },
+      dietTags: { vegan: "Végan", keto: "Kéto", glutenFree: "Sans Gluten", lactoseFree: "Sans Lactose", allergy: "Allergie", carnivore: "Carnivore" },
+      goalLabel: "de l'objectif",
+      consumed: "consommés",
+      challenges: { hydration: "Hydratation", fullDiary: "Journal complet", proteinGoal: "Objectif protéines", exercise: "Exercice" },
+      exercises: { running: "Course 30min", weights: "Musculation", cycling: "Cyclisme" },
     },
     ai: {
       badge: "Intelligence Artificielle Avancée",
@@ -447,6 +454,7 @@ export const translations = {
       ],
       aiActive: "IA Active",
       plan40days: "Plan de 40 jours",
+      dietTags: { vegan: "Végan", keto: "Kéto", glutenFree: "Sans Gluten", lactoseFree: "Sans Lactose", carnivore: "Carnivore", cutting: "Sèche" },
     },
     showcase: {
       badge: "Découvrez l'App de l'Intérieur",
